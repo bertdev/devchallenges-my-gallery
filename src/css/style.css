@@ -1,5 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap');
+
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  width: 100%;
+  height: 100vh;
+}
+
+main {
+  width: 100%;
+}
+
+@media only screen and (min-width: 360px) {
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .user {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+  }
+
+  .user_image {
+    width: 40%;
+    max-width: 102px;
+  }
+
+  .user_image img {
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+  }
+
+  .user_description {
+    text-align: center;
+  }
+
+  .user_description h3 {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17px;
+    color: #4E5150;
+    margin-top: 12px;
+  }
+
+  .user_description p {
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 12px;
+    color: #A9A9A9;
+    margin-top: 4px;
+  }
+
+  .user_data {
+    margin-top: 12px;
+    display: grid;
+    grid-template-columns: repeat(3, 78px);
+    gap: 10px;
+  }
+
+  .user_data_numbers {
+    width: 100%;
+    height: 52px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #E5E5E5;
+    border-radius: 12px;
+
+    font-size: 12px;
+    line-height: 15px;
+    font-weight: 600;
+  }
+
+  .user_data .numbers {
+    color: #4E5150;
+  }
+
+  .user_data .description_numbers {
+    color: #BDBDBD;
+  }
+
+}
+
+@media only screen and (min-width:  768px) {
+  .user {
+    margin-top: 40px;
+  }
+
+  .user_image {
+    max-width: 125px;
+  }
+
+  .user_description h3 {
+    font-size: 16px;
+    line-height: 18px;
+    margin-top: 14px;
+  }
+
+  .user_description p {
+    font-size: 12px;
+    line-height: 14px;
+    margin-top: 6px;
+  }
+
+  .user_data {
+    margin-top: 18px;
+    grid-template-columns: repeat(3, 92px);
+    gap: 16px;
+  }
+
+  .user_data_numbers {
+    height: 56px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+  
+}
+
+@media only screen and (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+
+  .user {
+    margin-top: 60px;
+  }
+
+  .user_image {
+    max-width: 150px;  
+  }
+
+  .user_description h3 {
+    font-size: 24px;
+    line-height: 29px;
+    margin-top: 16px;
+  }
+
+  .user_description p {
+    font-size: 14px;
+    line-height: 17px;
+    margin-top: 8px;
+  }
+
+  .user_data {
+    margin-top: 24px;
+    grid-template-columns: repeat(3, 100px);
+    gap: 24px;
+  }
+
+  .user_data_numbers {
+    height: 67px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+} 
